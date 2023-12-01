@@ -1,0 +1,26 @@
+.item-content-container,
+.item-content-container button {
+    height: 24px;
+    display: inline-block;
+}
+
+.item-content-container span,
+.item-content-container input {
+    margin-right: 8px;
+}
+
+.buttons-container-wrapper {
+    width: 142px;
+}
+
+.buttons-container-wrapper {
+    display: inline-block;
+}
+
+.buttons-container {
+    display: none;
+}
+
+.item-content-container:hover .buttons-container {
+    display: inline-block;
+}

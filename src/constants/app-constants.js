@@ -1,0 +1,1 @@
+export const MAX_LEVEL_OF_HIERARCHY = 4;
