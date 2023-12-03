@@ -10,7 +10,8 @@
 }
 
 .buttons-container-wrapper {
-    width: 142px;
+    min-width: 142px;
+    width: max-content;
 }
 
 .buttons-container-wrapper {

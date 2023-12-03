@@ -2,7 +2,7 @@ import TreeList from './components/tree-list';
 
 function App() {
   return (
-    <TreeList />
+    <TreeList level={0} />
   );
 }
 
