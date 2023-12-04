@@ -37,7 +37,7 @@ function TreeList({
                 : null;
 
             const list = parsedTreeList?.length
-                ? JSON.parse(treeList)
+                ? parsedTreeList
                 : DEFAULT_INITIAL_LIST_VALUE;
 
             setLevelZeroItems(list);
@@ -46,7 +46,8 @@ function TreeList({
         } else {
             setMaxId(node.items);
         }
-    }, [level, node]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     useEffect(() => {
         if (!isEditable || level === 0) {
@@ -62,7 +63,8 @@ function TreeList({
         setTimeout(() => window.addEventListener('click', hideInput));
 
         return () => window.removeEventListener('click', hideInput);
-    }, [isEditable, level]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [isEditable]);
 
     const addItem = () => {
         setCurrentMaxId(prevId => prevId += 1);
